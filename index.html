@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>COVID-19 Meter</title>
+  </head>
+  <body>
+    <div id="heading1">
+      <h1>COVID-19 Meter</h1>
+      <h4>Last Updated: <span id="lastUpdated"></span></h4>
+    </div>
+
+    <form id="searchForm">
+      <label for="country">Search by Country Name</label>
+      <input type="text" name="name" id="country" placeholder="product name" />
+      <button>Submit</button>
+    </form>
+    <div id="heading2">Worldwide</div>
+    <!-- HTML: Flex container with 3 columns of equal widths -->
+    <div class="flexcontainer">
+      <div class="columns">
+        <div>
+          Total Confirmed:
+          <span class="grey" id="totalConfirmed"></span>
+        </div>
+        <div>New Confirmed:<span class="grey" id="newConfirmed"></span></div>
+      </div>
+
+      <div class="columns">
+        <div>Total Deaths: <span class="red" id="totalDeaths"></span></div>
+        <div>New Deaths: <span class="red" id="newDeaths"></span></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</html>

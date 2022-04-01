@@ -1,0 +1,17 @@
+div.flexcontainer {
+  display: flex;
+  min-height: 100vh; /* set min container height to viewport height */
+}
+
+div.columns {
+  flex: 1;
+  padding: 10px;
+}
+
+grey {
+  font-size: large;
+}
+
+red {
+  font-size: large;
+}
