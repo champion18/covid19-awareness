@@ -8,32 +8,38 @@
     <title>COVID-19 Meter</title>
   </head>
   <body>
+    <div>
     <div id="heading1">
       <h1>COVID-19 Meter</h1>
-      <h4>Last Updated: <span id="lastUpdated"></span></h4>
+      <h4>Last Updated: <span id="lastUpdated"></span>    Courtesy: COVID API</h4>
     </div>
-
+  </div>
     <form id="searchForm">
       <label for="country">Search by Country Name</label>
-      <input type="text" name="name" id="country" placeholder="product name" />
+      <input type="text" name="name" id="country" placeholder="country name" />
       <button>Submit</button>
     </form>
+    <div id="display">
     <div id="heading2">Worldwide</div>
     <!-- HTML: Flex container with 3 columns of equal widths -->
     <div class="flexcontainer">
-      <div class="columns">
-        <div>
-          Total Confirmed:
+      <div class="columns" id="left">
+        <div class="rows">
+          Total Confirmed:<br>
           <span class="grey" id="totalConfirmed"></span>
         </div>
-        <div>New Confirmed:<span class="grey" id="newConfirmed"></span></div>
+        <div class="rows">New Confirmed: <br><span class="grey" id="newConfirmed"></span></div>
       </div>
 
-      <div class="columns">
-        <div>Total Deaths: <span class="red" id="totalDeaths"></span></div>
-        <div>New Deaths: <span class="red" id="newDeaths"></span></div>
+      <div class="columns" id="right">
+        <div class="rows">Total Deaths: <br><span class="red" id="totalDeaths"></span></div>
+        <div class="rows">New Deaths: <br><span class="red" id="newDeaths"></span></div>
       </div>
     </div>
+  </div>
+  <footer>
+  
+  </footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="index.js"></script>

@@ -1,17 +1,85 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1{
+  margin: 0px 0px 0px 10px;
+}
+
+h4{
+  margin: 30px 0px 10px 10px;
+}
+
 div.flexcontainer {
   display: flex;
   min-height: 100vh; /* set min container height to viewport height */
+  font-size: x-large;
+}
+
+#heading1{
+  background: linear-gradient(45deg, #261b54,steelblue);
+  color: #ffffff;
+}
+
+div#heading2{
+text-align: center;
+font-size: -webkit-xxx-large;
 }
 
 div.columns {
   flex: 1;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
-grey {
-  font-size: large;
+.grey {
+  color: slategrey;
+  font-size: -webkit-xxx-large;
 }
 
-red {
-  font-size: large;
+.red {
+  color: crimson;
+  font-size: -webkit-xxx-large;
+}
+
+.rows{
+  padding: 30px;
+}
+
+#display{
+  margin-top: 50px;
+}
+
+#left{
+text-align: right;
+}
+
+#right{
+  text-align: left;
+}
+
+#searchForm{
+text-align: center;
+margin: 50px;
+}
+
+input{
+border-radius: 8px;
+border-color: black;
+padding: 12px 20px;
+background-color:lightsteelblue;
+}
+
+button{
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background: black;
+  cursor: pointer;
 }
