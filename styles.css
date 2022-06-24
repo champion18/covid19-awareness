@@ -1,11 +1,6 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  height: auto;
-}
-
-.main {
-  height: auto;
 }
 
 .info {
@@ -140,4 +135,7 @@ h3 {
   background: linear-gradient(45deg, #261b54, steelblue);
   padding: 4vh;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
 }
