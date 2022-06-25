@@ -8,39 +8,71 @@
     <title>COVID-19 Meter</title>
   </head>
   <body>
-    <div>
-    <div id="heading1">
-      <h1>COVID-19 Meter</h1>
-      <h4>Last Updated: <span id="lastUpdated"></span>    Courtesy: COVID API</h4>
-    </div>
-  </div>
-    <form id="searchForm">
-      <label for="country">Search by Country Name</label>
-      <input type="text" name="name" id="country" placeholder="country name" />
-      <button>Submit</button>
-    </form>
-    <div id="display">
-    <div id="heading2">Worldwide</div>
-    <!-- HTML: Flex container with 3 columns of equal widths -->
-    <div class="flexcontainer">
-      <div class="columns" id="left">
-        <div class="rows">
-          Total Confirmed:<br>
-          <span class="grey" id="totalConfirmed"></span>
+    <div class="main">
+      <div class="header">
+        <div id="heading1">
+          <h1>The best way to fight COVID-19 is awareness</h1>
+          <h4>
+            Last Updated: <span id="lastUpdated"></span>
+            <p>Courtesy: COVID API & Free News API</p>
+          </h4>
         </div>
-        <div class="rows">New Confirmed: <br><span class="grey" id="newConfirmed"></span></div>
       </div>
+      <div class="info">
+        <div class="searchArea">
+          <form id="searchForm">
+            <label for="country">Search by Country Name</label>
+            <input
+              type="text"
+              name="name"
+              id="country"
+              placeholder="country name"
+            />
+            <button>Submit</button>
+          </form>
+          <div id="display">
+            <div id="heading2">Worldwide</div>
+            <!-- HTML: Flex container with 3 columns of equal widths -->
+            <div class="flexcontainer">
+              <div class="columns" id="left">
+                <div class="rows">
+                  Total Confirmed:<br />
+                  <span class="grey" id="totalConfirmed"></span>
+                </div>
+                <div class="rows">
+                  New Confirmed: <br /><span
+                    class="grey"
+                    id="newConfirmed"
+                  ></span>
+                </div>
+              </div>
 
-      <div class="columns" id="right">
-        <div class="rows">Total Deaths: <br><span class="red" id="totalDeaths"></span></div>
-        <div class="rows">New Deaths: <br><span class="red" id="newDeaths"></span></div>
+              <div class="columns" id="right">
+                <div class="rows">
+                  Total Deaths: <br /><span class="red" id="totalDeaths"></span>
+                </div>
+                <div class="rows">
+                  New Deaths: <br /><span class="red" id="newDeaths"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="newsArea">
+          <div class="newsFlex">
+            <h3>Latest Headlines about COVID-19</h3>
+            <div class="news"></div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-  
-  </footer>
+
+    <footer>
+      <div class="footer"><p>Made by Aastha Singh</p></div>
+    </footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="index.js"></script>
+  <script src="news.js"></script>
 </html>
