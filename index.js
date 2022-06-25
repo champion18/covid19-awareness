@@ -1,6 +1,3 @@
-// fix size of window
-// add gap at top
-
 const form = document.querySelector("#searchForm");
 
 const initialData = async () => {
