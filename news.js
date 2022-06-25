@@ -1,4 +1,3 @@
-// const axios = require("axios");
 const apiKey = "5c0abc89ec8745fe8b6ab48ec1bbccf8";
 
 const displayNews = (articles) => {
